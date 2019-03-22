@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.framework.modules.bigdata.dao.GbTTraOrderItem2010Dao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.framework.modules.bigdata.entity.GbTTraOrderItem2010Entity" id="gbTTraOrderItem2010Map">
+        <result property="did" column="DID"/>
+        <result property="accId" column="ACC_ID"/>
+        <result property="acceptDate" column="ACCEPT_DATE"/>
+        <result property="buyerOrgCode" column="BUYER_ORG_CODE"/>
+        <result property="commType" column="COMM_TYPE"/>
+        <result property="createDate" column="CREATE_DATE"/>
+        <result property="deliveryQty" column="DELIVERY_QTY"/>
+        <result property="drugCode" column="DRUG_CODE"/>
+        <result property="drugMode" column="DRUG_MODE"/>
+        <result property="drugName" column="DRUG_NAME"/>
+        <result property="drugSpec" column="DRUG_SPEC"/>
+        <result property="factoryName" column="FACTORY_NAME"/>
+        <result property="factoryOrgCode" column="FACTORY_ORG_CODE"/>
+        <result property="miniPack" column="MINI_PACK"/>
+        <result property="miniUsed" column="MINI_USED"/>
+        <result property="oosFlag" column="OOS_FLAG"/>
+        <result property="oosModifyDate" column="OOS_MODIFY_DATE"/>
+        <result property="oosModifyUserid" column="OOS_MODIFY_USERID"/>
+        <result property="orderId" column="ORDER_ID"/>
+        <result property="orderState" column="ORDER_STATE"/>
+        <result property="packMaterials" column="PACK_MATERIALS"/>
+        <result property="productId" column="PRODUCT_ID"/>
+        <result property="productName" column="PRODUCT_NAME"/>
+        <result property="productSpec" column="PRODUCT_SPEC"/>
+        <result property="purchaseId" column="PURCHASE_ID"/>
+        <result property="receiveDate" column="RECEIVE_DATE"/>
+        <result property="receiveQty" column="RECEIVE_QTY"/>
+        <result property="requestQty" column="REQUEST_QTY"/>
+        <result property="salerOrgCode" column="SALER_ORG_CODE"/>
+        <result property="sendDate" column="SEND_DATE"/>
+        <result property="senderOrgCode" column="SENDER_ORG_CODE"/>
+        <result property="standSpecRate" column="STAND_SPEC_RATE"/>
+        <result property="tenderUnitPrice" column="TENDER_UNIT_PRICE"/>
+        <result property="tenderYear" column="TENDER_YEAR"/>
+        <result property="unitPrice" column="UNIT_PRICE"/>
+        <result property="type" column="type"/>
+    </resultMap>
+
+
+</mapper>

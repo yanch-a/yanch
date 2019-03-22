@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>订单明细表</title>
+		<#include "/header.html">
+</head>
+<body>
+<div id="rrapp" v-cloak>
+    <div v-show="showList">
+        <div class="grid-btn">
+			<#if shiro.hasPermission("bigdata:gbttraorderitem2010:save")>
+            <a class="btn btn-primary" @click="add"><i class="fa fa-plus"></i>&nbsp;新增</a>
+			</#if>
+			<#if shiro.hasPermission("bigdata:gbttraorderitem2010:update")>
+            <a class="btn btn-primary" @click="update"><i class="fa fa-pencil-square-o"></i>&nbsp;修改</a>
+			</#if>
+			<#if shiro.hasPermission("bigdata:gbttraorderitem2010:delete")>
+            <a class="btn btn-primary" @click="del"><i class="fa fa-trash-o"></i>&nbsp;删除</a>
+			</#if>
+        </div>
+        <table id="jqGrid"></table>
+        <div id="jqGridPager"></div>
+    </div>
+
+    <div v-show="!showList" class="panel panel-default">
+        <div class="panel-heading">{{title}}</div>
+        <form class="form-horizontal">
+														                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.accId" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">经营企业确认或拒绝时间 退货时 退货人信息</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.acceptDate" placeholder="经营企业确认或拒绝时间 退货时 退货人信息"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">采购医院代码</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.buyerOrgCode" placeholder="采购医院代码"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.commType" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">创建时间</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.createDate" placeholder="创建时间"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">发货数量</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.deliveryQty" placeholder="发货数量"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">药品编码</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.drugCode" placeholder="药品编码"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.drugMode" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.drugName" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.drugSpec" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.factoryName" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.factoryOrgCode" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.miniPack" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.miniUsed" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.oosFlag" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">缺货修改日期</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.oosModifyDate" placeholder="缺货修改日期"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">缺货修改用户代码</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.oosModifyUserid" placeholder="缺货修改用户代码"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">记录唯一号</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.orderId" placeholder="记录唯一号"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.orderState" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.packMaterials" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">产品编码</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.productId" placeholder="产品编码"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.productName" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.productSpec" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">采购单唯一号</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.purchaseId" placeholder="采购单唯一号"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">医疗机构收货确认时间 医院撤销时间</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.receiveDate" placeholder="医疗机构收货确认时间 医院撤销时间"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">到货量</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.receiveQty" placeholder="到货量"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">订单数量</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.requestQty" placeholder="订单数量"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.salerOrgCode" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">经营企业发货时间</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.sendDate" placeholder="经营企业发货时间"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.senderOrgCode" placeholder=""/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">单位转换比</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.standSpecRate" placeholder="单位转换比"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">挂网价格</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.tenderUnitPrice" placeholder="挂网价格"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">所属招标期次</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.tenderYear" placeholder="所属招标期次"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label">单价</div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.unitPrice" placeholder="单价"/>
+                        </div>
+                    </div>
+											                    <div class="form-group">
+                        <div class="col-sm-2 control-label"></div>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" v-model="gbTTraOrderItem2010.type" placeholder=""/>
+                        </div>
+                    </div>
+							            <div class="form-group">
+                <div class="col-sm-2 control-label"></div>
+                <input type="button" class="btn btn-primary" @click="saveOrUpdate" value="确定"/>
+                &nbsp;&nbsp;<input type="button" class="btn btn-warning" @click="reload" value="返回"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="${request.contextPath}/statics/js/modules/bigdata/gbttraorderitem2010.js?_${.now?long}"></script>
+</body>
+</html>

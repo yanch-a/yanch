@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+		<#include "/header.html">
+</head>
+<body>
+<div id="rrapp" v-cloak>
+    <div v-show="showList">
+        <div class="grid-btn">
+        	<div class="form-group col-sm-2">
+                <input type="text" class="form-control" v-model="q.siteName" @keyup.enter="query" placeholder="站点名称">
+            </div>
+            <div class="form-group col-sm-3">
+                <select v-model="q.siteType"></select>
+            </div>
+            <a class="btn btn-default" @click="query">查询</a>
+			<#if shiro.hasPermission("sys:secollection:save")>
+            <a class="btn btn-primary" @click="add"><i class="fa fa-plus"></i>&nbsp;新增</a>
+			</#if>
+			<#if shiro.hasPermission("sys:secollection:update")>
+            <a class="btn btn-primary" @click="update"><i class="fa fa-pencil-square-o"></i>&nbsp;修改</a>
+			</#if>
+			<#if shiro.hasPermission("sys:secollection:delete")>
+            <a class="btn btn-primary" @click="del"><i class="fa fa-trash-o"></i>&nbsp;删除</a>
+			</#if>
+        </div>
+        <table id="jqGrid"></table>
+        <div id="jqGridPager"></div>
+    </div>
+    <div v-show="!showList" class="panel panel-default">
+        <div class="panel-heading">{{title}}</div>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <div class="col-sm-2 control-label">LOGO</div>
+                <div class="col-sm-10">
+                	<i data-icon="fa fa-heart" class="fa fa-heart fa-2x" id="logo-icon" style="cursor: pointer;" @click="showIcon" ></i>
+                       <input type="hidden" class="form-control" v-model="seCollection.logo" placeholder="LOGO"/>
+                   </div>
+               </div>
+			<div class="form-group">
+                <div class="col-sm-2 control-label">站点名称</div>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" v-model="seCollection.siteName" placeholder="站点名称"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2 control-label">站点类型</div>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" v-model="seCollection.siteType" placeholder="站点类型"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-2 control-label">来源</div>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" v-model="seCollection.origin" placeholder="来源"/>
+                </div>
+            </div>
+			<div class="form-group">
+                <div class="col-sm-2 control-label">URL</div>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" v-model="seCollection.url" placeholder="URL"/>
+                </div>
+            </div>
+			                    <div class="form-group">
+                <div class="col-sm-2 control-label">用户名</div>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" v-model="seCollection.userName" placeholder="用户名"/>
+                </div>
+            </div>
+			                    <div class="form-group">
+                <div class="col-sm-2 control-label">登录密码</div>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" v-model="seCollection.password" placeholder="登录密码"/>
+                </div>
+            </div>
+			                    <div class="form-group">
+                <div class="col-sm-2 control-label">排序</div>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" v-model="seCollection.seq" placeholder="排序"/>
+                </div>
+            </div>
+			<div class="form-group">
+                <div class="col-sm-2 control-label">备注</div>
+                <div class="col-sm-10">
+                	<textarea rows="3" class="form-control" v-model="seCollection.remark" placeholder="备注"></textarea>
+                </div>
+            </div>
+					
+			<div class="form-group">
+                <div class="col-sm-2 control-label"></div>
+                <input type="button" class="btn btn-primary" @click="saveOrUpdate" value="确定"/>
+                &nbsp;&nbsp;<input type="button" class="btn btn-warning" @click="reload" value="返回"/>
+            </div>
+        </form>
+    </div>
+	<#include "./icons.html">
+</div>
+<script src="${request.contextPath}/statics/js/modules/sys/secollection.js?_${.now?long}"></script>
+</body>
+</html>

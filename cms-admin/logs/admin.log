@@ -1,0 +1,140 @@
+2019-03-22 00:00:00,072 [INFO] [FrameworkScheduler_Worker-10] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 00:00:00,105 [INFO] [pool-29-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 00:00:00,365 [INFO] [FrameworkScheduler_Worker-9] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 00:00:00,367 [INFO] [pool-31-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 00:00:00,367 [INFO] [FrameworkScheduler_Worker-9] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：2毫秒
+2019-03-22 00:00:01,115 [INFO] [FrameworkScheduler_Worker-10] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1043毫秒
+2019-03-22 00:30:00,044 [INFO] [FrameworkScheduler_Worker-12] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 00:30:00,047 [INFO] [pool-32-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 00:30:00,140 [INFO] [FrameworkScheduler_Worker-11] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 00:30:00,144 [INFO] [pool-33-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 00:30:00,145 [INFO] [FrameworkScheduler_Worker-11] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：6毫秒
+2019-03-22 00:30:01,056 [INFO] [FrameworkScheduler_Worker-12] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1012毫秒
+2019-03-22 00:58:07,792 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 275] Validating all active sessions...
+2019-03-22 00:58:07,794 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 308] Finished session validation.  No sessions were stopped.
+2019-03-22 01:00:00,046 [INFO] [FrameworkScheduler_Worker-14] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 01:00:00,046 [INFO] [pool-34-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 01:00:00,141 [INFO] [FrameworkScheduler_Worker-13] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 01:00:00,142 [INFO] [pool-35-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 01:00:00,143 [INFO] [FrameworkScheduler_Worker-13] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：2毫秒
+2019-03-22 01:00:01,057 [INFO] [FrameworkScheduler_Worker-14] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1010毫秒
+2019-03-22 01:30:00,045 [INFO] [FrameworkScheduler_Worker-16] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 01:30:00,047 [INFO] [pool-36-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 01:30:00,144 [INFO] [FrameworkScheduler_Worker-15] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 01:30:00,145 [INFO] [pool-37-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 01:30:00,147 [INFO] [FrameworkScheduler_Worker-15] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：2毫秒
+2019-03-22 01:30:01,055 [INFO] [FrameworkScheduler_Worker-16] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1010毫秒
+2019-03-22 01:58:08,130 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 275] Validating all active sessions...
+2019-03-22 01:58:08,130 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 308] Finished session validation.  No sessions were stopped.
+2019-03-22 02:00:00,050 [INFO] [FrameworkScheduler_Worker-18] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 02:00:00,051 [INFO] [pool-38-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 02:00:00,145 [INFO] [FrameworkScheduler_Worker-17] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 02:00:00,146 [INFO] [pool-39-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 02:00:00,147 [INFO] [FrameworkScheduler_Worker-17] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：2毫秒
+2019-03-22 02:00:01,058 [INFO] [FrameworkScheduler_Worker-18] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1008毫秒
+2019-03-22 02:30:00,059 [INFO] [FrameworkScheduler_Worker-20] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 02:30:00,060 [INFO] [pool-40-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 02:30:00,161 [INFO] [FrameworkScheduler_Worker-19] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 02:30:00,163 [INFO] [pool-41-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 02:30:00,163 [INFO] [FrameworkScheduler_Worker-19] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：2毫秒
+2019-03-22 02:30:01,070 [INFO] [FrameworkScheduler_Worker-20] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1011毫秒
+2019-03-22 02:58:08,468 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 275] Validating all active sessions...
+2019-03-22 02:58:08,468 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 308] Finished session validation.  No sessions were stopped.
+2019-03-22 03:00:00,063 [INFO] [FrameworkScheduler_Worker-1] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 03:00:00,065 [INFO] [pool-42-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 03:00:00,167 [INFO] [FrameworkScheduler_Worker-2] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 03:00:00,168 [INFO] [pool-43-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 03:00:00,169 [INFO] [FrameworkScheduler_Worker-2] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：2毫秒
+2019-03-22 03:00:01,072 [INFO] [FrameworkScheduler_Worker-1] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1009毫秒
+2019-03-22 03:30:00,043 [INFO] [FrameworkScheduler_Worker-3] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 03:30:00,044 [INFO] [pool-44-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 03:30:00,137 [INFO] [FrameworkScheduler_Worker-4] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 03:30:00,138 [INFO] [pool-45-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 03:30:00,138 [INFO] [FrameworkScheduler_Worker-4] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：1毫秒
+2019-03-22 03:30:01,052 [INFO] [FrameworkScheduler_Worker-3] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1009毫秒
+2019-03-22 03:58:08,805 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 275] Validating all active sessions...
+2019-03-22 03:58:08,805 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 308] Finished session validation.  No sessions were stopped.
+2019-03-22 04:00:00,044 [INFO] [FrameworkScheduler_Worker-5] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 04:00:00,045 [INFO] [pool-46-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 04:00:00,147 [INFO] [FrameworkScheduler_Worker-6] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 04:00:00,148 [INFO] [pool-47-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 04:00:00,148 [INFO] [FrameworkScheduler_Worker-6] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：1毫秒
+2019-03-22 04:00:01,053 [INFO] [FrameworkScheduler_Worker-5] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1009毫秒
+2019-03-22 04:30:00,052 [INFO] [FrameworkScheduler_Worker-7] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 04:30:00,055 [INFO] [pool-48-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 04:30:00,151 [INFO] [FrameworkScheduler_Worker-8] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 04:30:00,152 [INFO] [pool-49-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 04:30:00,154 [INFO] [FrameworkScheduler_Worker-8] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：3毫秒
+2019-03-22 04:30:01,065 [INFO] [FrameworkScheduler_Worker-7] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1013毫秒
+2019-03-22 04:58:09,144 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 275] Validating all active sessions...
+2019-03-22 04:58:09,145 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 308] Finished session validation.  No sessions were stopped.
+2019-03-22 05:00:00,052 [INFO] [FrameworkScheduler_Worker-9] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 05:00:00,054 [INFO] [pool-50-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 05:00:00,156 [INFO] [FrameworkScheduler_Worker-10] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 05:00:00,158 [INFO] [pool-51-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 05:00:00,158 [INFO] [FrameworkScheduler_Worker-10] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：2毫秒
+2019-03-22 05:00:01,063 [INFO] [FrameworkScheduler_Worker-9] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1011毫秒
+2019-03-22 05:30:00,059 [INFO] [FrameworkScheduler_Worker-11] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 05:30:00,062 [INFO] [pool-52-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 05:30:00,158 [INFO] [FrameworkScheduler_Worker-12] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 05:30:00,159 [INFO] [pool-53-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 05:30:00,161 [INFO] [FrameworkScheduler_Worker-12] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：3毫秒
+2019-03-22 05:30:01,072 [INFO] [FrameworkScheduler_Worker-11] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1013毫秒
+2019-03-22 05:58:09,480 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 275] Validating all active sessions...
+2019-03-22 05:58:09,480 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 308] Finished session validation.  No sessions were stopped.
+2019-03-22 06:00:00,060 [INFO] [FrameworkScheduler_Worker-13] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 06:00:00,063 [INFO] [pool-54-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 06:00:00,161 [INFO] [FrameworkScheduler_Worker-14] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 06:00:00,162 [INFO] [pool-55-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 06:00:00,162 [INFO] [FrameworkScheduler_Worker-14] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：1毫秒
+2019-03-22 06:00:01,071 [INFO] [FrameworkScheduler_Worker-13] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1011毫秒
+2019-03-22 06:30:00,063 [INFO] [FrameworkScheduler_Worker-15] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 06:30:00,074 [INFO] [pool-56-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 06:30:00,168 [INFO] [FrameworkScheduler_Worker-16] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 06:30:00,170 [INFO] [pool-57-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 06:30:00,171 [INFO] [FrameworkScheduler_Worker-16] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：3毫秒
+2019-03-22 06:30:01,084 [INFO] [FrameworkScheduler_Worker-15] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1021毫秒
+2019-03-22 06:58:09,818 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 275] Validating all active sessions...
+2019-03-22 06:58:09,820 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 308] Finished session validation.  No sessions were stopped.
+2019-03-22 07:00:00,051 [INFO] [FrameworkScheduler_Worker-17] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 07:00:00,051 [INFO] [pool-58-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 07:00:00,157 [INFO] [FrameworkScheduler_Worker-18] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 07:00:00,158 [INFO] [pool-59-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 07:00:00,158 [INFO] [FrameworkScheduler_Worker-18] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：1毫秒
+2019-03-22 07:00:01,064 [INFO] [FrameworkScheduler_Worker-17] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1013毫秒
+2019-03-22 07:30:00,059 [INFO] [FrameworkScheduler_Worker-19] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 07:30:00,063 [INFO] [pool-60-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 07:30:00,163 [INFO] [FrameworkScheduler_Worker-20] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 07:30:00,164 [INFO] [pool-61-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 07:30:00,165 [INFO] [FrameworkScheduler_Worker-20] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：2毫秒
+2019-03-22 07:30:01,070 [INFO] [FrameworkScheduler_Worker-19] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1011毫秒
+2019-03-22 07:58:10,155 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 275] Validating all active sessions...
+2019-03-22 07:58:10,155 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 308] Finished session validation.  No sessions were stopped.
+2019-03-22 08:00:00,056 [INFO] [FrameworkScheduler_Worker-2] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 08:00:00,059 [INFO] [pool-62-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 08:00:00,164 [INFO] [FrameworkScheduler_Worker-1] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 08:00:00,172 [INFO] [pool-63-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 08:00:00,173 [INFO] [FrameworkScheduler_Worker-1] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：9毫秒
+2019-03-22 08:00:01,067 [INFO] [FrameworkScheduler_Worker-2] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1011毫秒
+2019-03-22 08:30:00,062 [INFO] [FrameworkScheduler_Worker-4] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 08:30:00,065 [INFO] [pool-64-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 08:30:00,167 [INFO] [FrameworkScheduler_Worker-3] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 08:30:00,173 [INFO] [pool-65-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 08:30:00,173 [INFO] [FrameworkScheduler_Worker-3] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：6毫秒
+2019-03-22 08:30:01,071 [INFO] [FrameworkScheduler_Worker-4] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1009毫秒
+2019-03-22 08:58:10,500 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 275] Validating all active sessions...
+2019-03-22 08:58:10,501 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 308] Finished session validation.  No sessions were stopped.
+2019-03-22 09:00:00,074 [INFO] [FrameworkScheduler_Worker-6] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 09:00:00,077 [INFO] [pool-66-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 09:00:00,194 [INFO] [FrameworkScheduler_Worker-5] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 09:00:00,195 [INFO] [pool-67-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 09:00:00,208 [INFO] [FrameworkScheduler_Worker-5] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：14毫秒
+2019-03-22 09:00:01,086 [INFO] [FrameworkScheduler_Worker-6] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1012毫秒
+2019-03-22 09:30:00,061 [INFO] [FrameworkScheduler_Worker-8] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：1
+2019-03-22 09:30:00,061 [INFO] [pool-68-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 23] 我是带参数的test方法，正在被执行，参数为：framework
+2019-03-22 09:30:00,189 [INFO] [FrameworkScheduler_Worker-7] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 47] 任务准备执行，任务ID：2
+2019-03-22 09:30:00,191 [INFO] [pool-69-thread-1] com.framework.modules.job.task.TestTask [TestTask.java : 37] 我是不带参数的test2方法，正在被执行
+2019-03-22 09:30:00,192 [INFO] [FrameworkScheduler_Worker-7] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：2  总共耗时：3毫秒
+2019-03-22 09:30:01,079 [INFO] [FrameworkScheduler_Worker-8] com.framework.modules.job.utils.ScheduleJob [ScheduleJob.java : 59] 任务执行完毕，任务ID：1  总共耗时：1018毫秒
+2019-03-22 09:58:09,851 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 275] Validating all active sessions...
+2019-03-22 09:58:09,852 [INFO] [SessionValidationThread-1] o.apache.shiro.session.mgt.AbstractValidatingSessionManager [AbstractValidatingSessionManager.java : 308] Finished session validation.  No sessions were stopped.
